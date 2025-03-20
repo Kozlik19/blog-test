@@ -1,7 +1,7 @@
 services:
   app: &backend
     build: .
-    # entrypoint: sh ./docker-entrypoint.sh
+    entrypoint: sh ./docker-entrypoint.sh
     env_file: .env
     volumes:
       - rails_logs:/app/log
